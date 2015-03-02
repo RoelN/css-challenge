@@ -5,10 +5,19 @@ $base-line-height: 28px;
 //
 // End Vertical Rhythm
 
-// Google fonts
+// Typography
 //
 @import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic');
 $title-font-family: 'Droid Sans', Verdana, Arial, sans-serif;
 $body-font-family: 'Droid Serif', Times, 'Times New Roman', serif;
+
+$h1-font-size: ($base-font-size * 3);
+$h2-font-size: ($base-font-size * 2);
+$h3-font-size: ($base-font-size * 1.5);
 //
-// End Google fonts
+// End Typography
+
+// Colors
+$primary-text-color: #333;
+
+// End colors
