@@ -2,7 +2,7 @@ $susy: (
 //   flow: ltr, // rtl | ltr
 //   math: fluid, // fluid | static
 //   output: float, // float | isolate
-   gutter-position: split, // before | after | split | inside | inside-static
+//   gutter-position: split, // before | after | split | inside | inside-static
    container: 940px, // <length> | auto
 //   container-position: center, // left | center | right | <length> [*2]
    columns: 12, // <number> | <list>
@@ -13,7 +13,7 @@ $susy: (
    debug: (
      image: show, // show | hide | show-columns | show-baseline
 //     color: rgba(#66f, .25), // <color>
-     output: background, // background | overlay
+     output: overlay, // background | overlay
      toggle: top right, // right | left and top | bottom
    ),
    use-custom: (
@@ -29,15 +29,20 @@ $susy: (
   @include container;
 }
 
-// TODO: Make this nice
 .features {
   p {
     @include span(6);
+    &:last-child {
+      @include last;
+    }
   }
 }
 
 .testimonials {
   article {
     @include span(4);
+    &:last-child {
+      @include last;
+    }
   }
 }
