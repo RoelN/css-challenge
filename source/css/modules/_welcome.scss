@@ -1,0 +1,11 @@
+.welcome {
+  @include rhythm(0,5,3,0);
+  background-color: $welcome-bg-color;
+  text-align: center;
+  h1 {
+    color: $welcome-title-color;
+  }
+  p {
+    color: $welcome-subtitle-color;
+  }
+}

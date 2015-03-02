@@ -11,7 +11,7 @@ $base-line-height: 28px;
 $title-font-family: 'Droid Sans', Verdana, Arial, sans-serif;
 $body-font-family: 'Droid Serif', Times, 'Times New Roman', serif;
 
-$h1-font-size: ($base-font-size * 3);
+$h1-font-size: ($base-font-size * 2.7);
 $h2-font-size: ($base-font-size * 2);
 $h3-font-size: ($base-font-size * 1.5);
 //
@@ -19,6 +19,15 @@ $h3-font-size: ($base-font-size * 1.5);
 
 // Colors
 //
+$primary-color: #3f51b5;
+$light-primary-color: #c5cae9;
+$text-color: #fff;
 $primary-text-color: #333;
 //
 // End colors
+
+// Welcome
+$welcome-bg-color: $primary-color;
+$welcome-title-color: $text-color;
+$welcome-subtitle-color: $light-primary-color;
+// End Welcome
