@@ -1,0 +1,30 @@
+$susy: (
+//   flow: ltr, // rtl | ltr
+//   math: fluid, // fluid | static
+//   output: float, // float | isolate
+   gutter-position: split, // before | after | split | inside | inside-static
+   container: 940px, // <length> | auto
+//   container-position: center, // left | center | right | <length> [*2]
+   columns: 12, // <number> | <list>
+//   gutters: .25, // <ratio>
+//   column-width: false, // <length> | false/null
+//   global-box-sizing: content-box, // border-box | content-box
+//   last-flow: to, // from | to
+   debug: (
+     image: show, // show | hide | show-columns | show-baseline
+//     color: rgba(#66f, .25), // <color>
+     output: background, // background | overlay
+     toggle: top right, // right | left and top | bottom
+   ),
+   use-custom: (
+     background-image: true,
+//     background-options: false,
+//     box-sizing: true,
+//     clearfix: false,
+//     rem: true,
+   )
+);
+
+.page-width {
+  @include container;
+}

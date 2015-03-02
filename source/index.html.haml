@@ -3,21 +3,23 @@ title: First Iteration
 ---
 
 %header.welcome
-    %h1 Welcome to my latest experiment
-    %p= lorem.sentence
-    %button Try Now
+    .page-width
+        %h1 Welcome to my latest experiment
+        %p= lorem.sentence
+        %button Try Now
 
-%section.features
+%section.page-width.features
     %h2 Have a look at our features
     %p= lorem.paragraphs 2
     %p= lorem.paragraphs 2
 
 %section.testimonials
-    %h2 This is what our customers say
+    .page-width
+        %h2 This is what our customers say
 
-    - 3.times do |n|
-        %article
-            = image_tag "avatar#{n+1}.jpg"
-            %h3= lorem.name
-            %span.job-title= lorem.words 2
-            %p= lorem.sentences 2
+        - 3.times do |n|
+            %article
+                = image_tag "avatar#{n+1}.jpg"
+                %h3= lorem.name
+                %span.job-title= lorem.words 2
+                %p= lorem.sentences 2
