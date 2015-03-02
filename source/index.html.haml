@@ -1,10 +1,9 @@
 ---
-title: HTML5 Boilerplate Middleman
+title: First Iteration
 ---
 
-%header
-    %h1.title
-        Welcome to my latest experiment
+%header.welcome
+    %h1 Welcome to my latest experiment
     %p= lorem.sentence
     %button Try Now
 
@@ -19,6 +18,6 @@ title: HTML5 Boilerplate Middleman
     - 3.times do |n|
         %article
             = image_tag "avatar#{n+1}.jpg"
-            %h3 Me
-            %span This is what I do
-            %p This is what I say
+            %h3= lorem.name
+            %span.job-title= lorem.words 2
+            %p= lorem.sentences 2
