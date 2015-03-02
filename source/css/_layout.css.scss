@@ -28,3 +28,16 @@ $susy: (
 .page-width {
   @include container;
 }
+
+// TODO: Make this nice
+.features {
+  p {
+    @include span(6);
+  }
+}
+
+.testimonials {
+  article {
+    @include span(4);
+  }
+}
