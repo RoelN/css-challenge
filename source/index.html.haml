@@ -1,0 +1,24 @@
+---
+title: HTML5 Boilerplate Middleman
+---
+
+%header
+    %h1.title
+        Welcome to my latest experiment
+    %p= lorem.sentence
+    %button Try Now
+
+%section.features
+    %h2 Have a look at our features
+    %p= lorem.paragraphs 2
+    %p= lorem.paragraphs 2
+
+%section.testimonials
+    %h2 This is what our customers say
+
+    - 3.times do |n|
+        %article
+            = image_tag "avatar#{n+1}.jpg"
+            %h3 Me
+            %span This is what I do
+            %p This is what I say
