@@ -34,4 +34,5 @@ img, object {
 
 button, a.button {
     @include button($standard-button);
+    font-family: $title-font-family;
 }
