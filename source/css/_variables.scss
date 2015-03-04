@@ -11,9 +11,13 @@ $base-line-height: 28px;
 $sans-serif-font-family: 'Droid Sans', Verdana, Arial, sans-serif;
 $serif-font-family: 'Droid Serif', Times, 'Times New Roman', serif;
 
-$h1-font-size: ($base-font-size * 2.7);
-$h2-font-size: ($base-font-size * 2);
-$h3-font-size: ($base-font-size * 1.5);
+$xlarge-font-size: ($base-font-size * 2.7);
+$large-font-size: ($base-font-size * 2);
+$medium-font-size: ($base-font-size * 1.1);
+
+$h1-font-size: $xlarge-font-size;
+$h2-font-size: $large-font-size;
+$h3-font-size: $medium-font-size;
 
 $body-font-family: $serif-font-family;
 $title-font-family: $sans-serif-font-family;
@@ -30,16 +34,27 @@ $primary-text-color: #333;
 // End colors
 
 // Welcome
+//
 $welcome-bg-color: $primary-color;
 $welcome-title-color: $text-color;
 $welcome-subtitle-color: $light-primary-color;
+//
 // End Welcome
 
 // Buttons
-$button-font-size: 20px;
-$button-border-width: 2px;
-
-$button-horizontal-padding: 20px;
-$button-min-width: 78px;
-$button-border-radius: 2px;
+//
+$standard-button: (
+    font-size: $medium-font-size,
+    border-width: 2px,
+    horizontal-padding: $medium-font-size,
+    min-width: 78px,
+    border-radius: 2px
+);
+// $large-button: (
+//
+// );
+// $small-button: (
+//
+// )
+//
 // End buttons

@@ -32,16 +32,6 @@ img, object {
     height: auto;
 }
 
-button {
-  @include adjust-font-size-to($button-font-size);
-  border: $button-border-width solid;
-
-  @include horizontal-borders($button-border-width, .25, $button-font-size);
-  @include rhythm-margins(.25, .25, $button-font-size);
-  padding: {
-    right: $button-horizontal-padding;
-    left: $button-horizontal-padding;
-  }
-  min-width: $button-min-width;
-  @include border-radius($button-border-radius);
+button, a.button {
+    @include button($standard-button);
 }
