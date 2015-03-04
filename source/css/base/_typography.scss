@@ -27,6 +27,7 @@ p {
 }
 
 img, object {
+    // http://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom
     vertical-align: middle;
     max-width: 100%;
     height: auto;

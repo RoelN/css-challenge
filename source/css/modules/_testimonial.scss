@@ -1,0 +1,32 @@
+.testimonial {
+    background-color: $testimonial-bg-color;
+    padding: {
+        left: 1em;
+        right: 1em;
+    }
+    @include box-sizing(border-box);
+    border: $testimonial-border-width solid $testimonial-border-color;
+    @include horizontal-borders($testimonial-border-width, 2);
+    @include border-radius($testimonial-border-radius);
+    @include margin-leader(3);
+    h3 {
+        font-weight: normal;
+        @include adjust-font-size-to($base-font-size);
+        @include rhythm(1,0,0,0, $base-font-size);
+        font-family: $body-font-family;
+        text-transform: uppercase;
+    }
+    .job-title {
+        font-style: italic;
+        display: block;
+        @include rhythm(0,0,0,1);
+    }
+    img {
+        border: $testimonial-image-border-width solid $testimonial-image-border-color;
+        @include border-radius(50%);
+        height: rhythm($lines: 5, $offset: 2*$testimonial-image-border-width);
+    }
+    p {
+        color: $testimonial-text-color;
+    }
+}
