@@ -15,15 +15,33 @@ h1 {
 }
 h2 {
     @include adjust-font-size-to($h2-font-size);
+    @include rhythm(1,0,0,0, $h2-font-size);
 }
 h3 {
     @include adjust-font-size-to($h3-font-size);
+    @include rhythm(1,0,0,0, $h3-font-size);
 }
 
 p {
-  @include rhythm(0,0,0,1);
+    @include rhythm(0,0,0,1);
 }
 
-img {
-  vertical-align: middle;
+img, object {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+  @include adjust-font-size-to($button-font-size);
+  border: $button-border-width solid;
+
+  @include horizontal-borders($button-border-width, .25, $button-font-size);
+  @include rhythm-margins(.25, .25, $button-font-size);
+  padding: {
+    right: $button-horizontal-padding;
+    left: $button-horizontal-padding;
+  }
+  min-width: $button-min-width;
+  @include border-radius($button-border-radius);
 }

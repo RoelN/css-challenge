@@ -8,12 +8,15 @@ $base-line-height: 28px;
 // Typography
 //
 @import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic');
-$title-font-family: 'Droid Sans', Verdana, Arial, sans-serif;
-$body-font-family: 'Droid Serif', Times, 'Times New Roman', serif;
+$sans-serif-font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+$serif-font-family: 'Droid Serif', Times, 'Times New Roman', serif;
 
 $h1-font-size: ($base-font-size * 2.7);
 $h2-font-size: ($base-font-size * 2);
 $h3-font-size: ($base-font-size * 1.5);
+
+$body-font-family: $serif-font-family;
+$title-font-family: $sans-serif-font-family;
 //
 // End Typography
 
@@ -31,3 +34,12 @@ $welcome-bg-color: $primary-color;
 $welcome-title-color: $text-color;
 $welcome-subtitle-color: $light-primary-color;
 // End Welcome
+
+// Buttons
+$button-font-size: 20px;
+$button-border-width: 2px;
+
+$button-horizontal-padding: 20px;
+$button-min-width: 78px;
+$button-border-radius: 2px;
+// End buttons
