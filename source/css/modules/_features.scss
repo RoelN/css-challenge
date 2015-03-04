@@ -1,0 +1,7 @@
+.features {
+  text-align: center;
+  @include rhythm(0,2,3,0);
+  article {
+      @include rhythm(2,0,0,0);
+  }
+}

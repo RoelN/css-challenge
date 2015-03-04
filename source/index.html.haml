@@ -10,8 +10,9 @@ title: First Iteration
 
 %section.page-width.features
     %h2 Have a look at our features
-    %p= lorem.paragraphs 2
-    %p= lorem.paragraphs 2
+    - 2.times do
+        %article
+            %p= lorem.paragraphs 2
 
 %section.testimonials
     .page-width
