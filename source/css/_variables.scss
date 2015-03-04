@@ -31,6 +31,7 @@ $light-primary-color: #c5cae9;
 $accent-color: #03a9f4;
 $text-color: #fff;
 $primary-text-color: #333;
+$divider-color: #b6b6b6;
 //
 // End colors
 
@@ -62,3 +63,11 @@ $button-bg-color: $accent-color;
 $button-hover-bg-color: darken($button-bg-color, 5%);
 //
 // End buttons
+
+// Testimonials
+//
+$testimonials-bg-color: $divider-color;
+$testimonials-h2-color: $text-color;
+$testimonials-h2-text-shadow: 0px 1px 2px fade_out(black, .5);
+//
+// End Testimonials
