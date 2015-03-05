@@ -33,7 +33,7 @@ img, object {
     height: auto;
 }
 
-button, a.button {
+button {
     @include button($standard-button);
     font-family: $title-font-family;
 }
