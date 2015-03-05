@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'compass';
+@import 'compass/css3/selection'; // Is not included in `compass`
 @import 'compass/reset';
 @import 'susy';
 
