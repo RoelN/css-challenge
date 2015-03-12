@@ -1,0 +1,24 @@
+// Styles a button with a total height of 2 lines (margin included).
+// Since this can also be applied to other tags (i.e. `a.button`)
+// this CSS is extracted to a mixin instead of defined in `base`.
+// - [$button]   : <map>
+@mixin button($button) {
+    $font-size:           map-get($button, font-size);
+    $min-width:           map-get($button, min-width);
+    $horizontal-padding:  map-get($button, horizontal-padding);
+    $border-width:        map-get($button, border-width);
+    $border-radius:       map-get($button, border-radius);
+
+    @include adjust-font-size-to($font-size);
+    min-width: $min-width;
+    @include rhythm-margins(.25, .25, $font-size);
+    padding: {
+      right: $horizontal-padding;
+      left: $horizontal-padding;
+    }
+    display: inline-block;
+    border: $border-width solid;
+    @include horizontal-borders($border-width, .25, $font-size);
+    @include border-radius($border-radius);
+    cursor: pointer;
+}

@@ -2,18 +2,18 @@ $susy: (
 //   flow: ltr, // rtl | ltr
 //   math: fluid, // fluid | static
 //   output: float, // float | isolate
-   gutter-position: split, // before | after | split | inside | inside-static
+//   gutter-position: split, // before | after | split | inside | inside-static
    container: 940px, // <length> | auto
 //   container-position: center, // left | center | right | <length> [*2]
    columns: 12, // <number> | <list>
-//   gutters: .25, // <ratio>
+   gutters: 1/10, // <ratio>
 //   column-width: false, // <length> | false/null
 //   global-box-sizing: content-box, // border-box | content-box
 //   last-flow: to, // from | to
-   debug: (
+   xdebug: (
      image: show, // show | hide | show-columns | show-baseline
 //     color: rgba(#66f, .25), // <color>
-     output: background, // background | overlay
+     output: overlay, // background | overlay
      toggle: top right, // right | left and top | bottom
    ),
    use-custom: (
@@ -27,4 +27,22 @@ $susy: (
 
 .page-width {
   @include container;
+}
+
+.features {
+  article {
+    @include span(1 of 2);
+    &:last-child {
+      @include last;
+    }
+  }
+}
+
+.testimonials {
+  article {
+    @include span(1 of 3);
+    &:last-child {
+      @include last;
+    }
+  }
 }

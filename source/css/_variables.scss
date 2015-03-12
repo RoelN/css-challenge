@@ -1,24 +1,87 @@
 // Vertical Rhythm
 //
-$base-font-size: 20px;
-$base-line-height: 28px;
+$base-font-size:                  20px;
+$base-line-height:                28px;
 //
 // End Vertical Rhythm
 
 // Typography
 //
 @import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic');
-$title-font-family: 'Droid Sans', Verdana, Arial, sans-serif;
-$body-font-family: 'Droid Serif', Times, 'Times New Roman', serif;
+$sans-serif-font-family:          'Droid Sans', Verdana, Arial, sans-serif;
+$serif-font-family:               'Droid Serif', Times, 'Times New Roman', serif;
 
-$h1-font-size: ($base-font-size * 3);
-$h2-font-size: ($base-font-size * 2);
-$h3-font-size: ($base-font-size * 1.5);
+$xlarge-font-size:                ($base-font-size * 2.7);
+$large-font-size:                 ($base-font-size * 2);
+$medium-font-size:                ($base-font-size * 1.1);
+
+$h1-font-size:                    $xlarge-font-size;
+$h2-font-size:                    $large-font-size;
+$h3-font-size:                    $medium-font-size;
+
+$body-font-family:                $serif-font-family;
+$title-font-family:               $sans-serif-font-family;
 //
 // End Typography
 
 // Colors
 //
-$primary-text-color: #333;
+$primary-color:                   #3f51b5;
+$light-primary-color:             #c5cae9;
+$accent-color:                    #03a9f4;
+$text-color:                      #fff;
+$primary-text-color:              #333;
+$divider-color:                   #b6b6b6;
+$secondary-text:                  #727272;
 //
 // End colors
+
+$selection-bg-color:              $primary-color;
+// Welcome
+//
+$welcome-bg-color:                $primary-color;
+$welcome-title-color:             $text-color;
+$welcome-subtitle-color:          $light-primary-color;
+//
+// End Welcome
+
+// Buttons
+//
+$standard-button: (
+    font-size:                    $medium-font-size,
+    border-width:                 2px,
+    horizontal-padding:           $medium-font-size,
+    min-width:                    78px,
+    border-radius:                2px
+);
+// $large-button: (
+//
+// );
+// $small-button: (
+//
+// )
+$button-color:                    $text-color;
+$button-bg-color:                 $accent-color;
+$button-hover-bg-color:           darken($button-bg-color, 5%);
+//
+// End buttons
+
+// Testimonials
+//
+$testimonials-bg-color:           $divider-color;
+$testimonials-h2-color:           $text-color;
+$testimonials-h2-text-shadow:     0px 1px 2px fade_out(black, .5);
+//
+// End Testimonials
+
+// Testimonial
+//
+$testimonial-bg-color:            $text-color;
+$testimonial-text-color:          $secondary-text;
+$testimonial-border-color:        $text-color;
+$testimonial-border-radius:       2px;
+$testimonial-border-width:        2px;
+$testimonial-image-border-color:  $accent-color;
+$testimonial-image-border-width:  8px;
+//
+// End Testimonial

@@ -10,15 +10,16 @@ title: First Iteration
 
 %section.page-width.features
     %h2 Have a look at our features
-    %p= lorem.paragraphs 2
-    %p= lorem.paragraphs 2
+    - 2.times do
+        %article
+            %p= lorem.paragraphs 2
 
 %section.testimonials
     .page-width
         %h2 This is what our customers say
 
         - 3.times do |n|
-            %article
+            %article.testimonial
                 = image_tag "avatar#{n+1}.jpg"
                 %h3= lorem.name
                 %span.job-title= lorem.words 2

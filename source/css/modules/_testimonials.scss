@@ -1,0 +1,11 @@
+.testimonials {
+    text-align: center;
+    @include rhythm(0,2,3,0);
+
+    background-color: $testimonials-bg-color;
+
+    h2 {
+        color: $testimonials-h2-color;
+        @include text-shadow($testimonials-h2-text-shadow);
+    }
+}

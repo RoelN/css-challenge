@@ -15,7 +15,30 @@ h1 {
 }
 h2 {
     @include adjust-font-size-to($h2-font-size);
+    @include rhythm(1,0,0,0, $h2-font-size);
 }
 h3 {
     @include adjust-font-size-to($h3-font-size);
+    @include rhythm(1,0,0,0, $h3-font-size);
+}
+
+p {
+    @include rhythm(0,0,0,1);
+}
+
+img, object {
+    // http://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    @include button($standard-button);
+    font-family: $title-font-family;
+}
+
+// TODO: Is this part of typography?
+* {
+    @include selection($selection-bg-color, contrast-color($selection-bg-color));
 }

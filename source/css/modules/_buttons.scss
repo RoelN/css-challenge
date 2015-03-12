@@ -1,0 +1,12 @@
+button {
+    @include transition-property(background-color, border-color);
+    @include transition-duration(0.2s);
+
+    color: $button-color;
+    background-color: $button-bg-color;
+    border-color: $button-bg-color;
+    &:hover {
+        background-color: $button-hover-bg-color;
+        border-color: $button-hover-bg-color;
+    }
+}
