@@ -29,20 +29,21 @@ $susy: (
   @include container;
 }
 
-.features {
-  article {
+// Todo: mixin to generate these?
+.columns-2 {
+ .column {
     @include span(1 of 2);
-    &:last-child {
-      @include last;
-    }
   }
 }
 
-.testimonials {
-  article {
+.columns-3 {
+ .column {
     @include span(1 of 3);
-    &:last-child {
-      @include last;
-    }
   }
 }
+
+.column {
+  &:last-child {
+    @include last;
+  }
+ }

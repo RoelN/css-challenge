@@ -14,13 +14,30 @@ title: First Iteration
         %article
             %p= lorem.paragraphs 2
 
-%section.testimonials
+%section.page-width.features
+    .page-width
+        %h2 Out products are awesome!
+        .columns-2
+            .column
+                %article yo
+            .column
+                %article yo
+        .columns-3
+            .column
+                %article yo
+            .column
+                %article yo
+            .column
+                %article yo
+
+%section.testimonials.columns-3
     .page-width
         %h2 This is what our customers say
 
         - 3.times do |n|
-            %article.testimonial
-                = image_tag "avatar#{n+1}.jpg"
-                %h3= lorem.name
-                %span.job-title= lorem.words 2
-                %p= lorem.sentences 2
+            .column
+                %article.testimonial
+                    = image_tag "avatar#{n+1}.jpg"
+                    %h3= lorem.name
+                    %span.job-title= lorem.words 2
+                    %p= lorem.sentences 2
