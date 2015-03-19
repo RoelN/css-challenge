@@ -69,7 +69,7 @@ $button-hover-bg-color:           darken($button-bg-color, 5%);
 
 // Testimonials
 //
-$testimonials-bg-color:           $divider-color;
+$testimonials-bg-color:           $accent-color;
 $testimonials-h2-color:           $text-color;
 $testimonials-h2-text-shadow:     0px 1px 2px fade_out(black, .5);
 //
@@ -86,3 +86,9 @@ $testimonial-image-border-color:  $accent-color;
 $testimonial-image-border-width:  8px;
 //
 // End Testimonial
+
+// Our products
+$our-products-bg-color:           $divider-color;
+$our-products-h2-color:           $text-color;
+$our-products-h2-text-shadow:     0px 1px 2px fade_out(black, .5);
+// End Our products
