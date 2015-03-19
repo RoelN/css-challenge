@@ -33,11 +33,6 @@ img, object {
     height: auto;
 }
 
-button {
-    @include button($standard-button);
-    font-family: $title-font-family;
-}
-
 // TODO: Is this part of typography?
 * {
     @include selection($selection-bg-color, contrast-color($selection-bg-color));

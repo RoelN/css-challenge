@@ -31,7 +31,9 @@ $susy: (
 
 @for $i from 2 to 5 {
   .columns-#{$i} {
-   .column {
+    clear: both;
+
+    .column {
       @include span(1 of $i);
     }
   }

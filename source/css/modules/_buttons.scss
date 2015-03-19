@@ -1,12 +1,24 @@
-button {
+.button {
     @include transition-property(background-color, border-color);
     @include transition-duration(0.2s);
 
+    @include button($standard-button);
+    font-family: $title-font-family;
     color: $button-color;
     background-color: $button-bg-color;
     border-color: $button-bg-color;
     &:hover {
         background-color: $button-hover-bg-color;
         border-color: $button-hover-bg-color;
+    }
+}
+
+.call-to-action {
+    color: $cta-button-color;
+    background-color: $cta-button-bg-color;
+    border-color: $cta-button-bg-color;
+    &:hover {
+        background-color: $cta-button-hover-bg-color;
+        border-color: $cta-button-hover-bg-color;
     }
 }

@@ -6,7 +6,7 @@ title: First Iteration
     .page-width
         %h1 Welcome to my latest experiment
         %p= lorem.sentence
-        %button Try Now
+        %button.call-to-action.button Try Now
 
 %section.page-width.features
     %h2 Have a look at our features
@@ -16,19 +16,24 @@ title: First Iteration
 
 %section.our-products
     .page-width
-        %h2 Out products are awesome!
+        %h2 Our products are awesome!
         .columns-2
-            .column
-                %article yo
-            .column
-                %article yo
+            - 1.upto 2 do |n|
+                .column
+                    %article
+                        = image_tag "product#{n}-white.png"
+                        %h3= lorem.name
+                        %p= lorem.sentences 1
+                        %a.button Details...
         .columns-3
-            .column
-                %article yo
-            .column
-                %article yo
-            .column
-                %article yo
+            - 3.upto 5 do |n|
+                .column
+                    %article
+                        = image_tag "product#{n}-white.png"
+                        %h3= lorem.name
+                        %p= lorem.sentences 1
+                        %a.button Details...
+
 
 %section.testimonials.columns-3
     .page-width

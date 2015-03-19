@@ -64,6 +64,10 @@ $standard-button: (
 $button-color:                    $text-color;
 $button-bg-color:                 $accent-color;
 $button-hover-bg-color:           darken($button-bg-color, 5%);
+
+$cta-button-color:                $text-color;
+$cta-button-bg-color:             $divider-color;
+$cta-button-hover-bg-color:       darken($cta-button-bg-color, 5%);
 //
 // End buttons
 
