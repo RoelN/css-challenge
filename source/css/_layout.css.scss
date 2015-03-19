@@ -29,16 +29,11 @@ $susy: (
   @include container;
 }
 
-// Todo: mixin to generate these?
-.columns-2 {
- .column {
-    @include span(1 of 2);
-  }
-}
-
-.columns-3 {
- .column {
-    @include span(1 of 3);
+@for $i from 2 to 5 {
+  .columns-#{$i} {
+   .column {
+      @include span(1 of $i);
+    }
   }
 }
 
