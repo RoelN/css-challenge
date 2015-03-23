@@ -3,4 +3,4 @@ equalHeights = ($sel) ->
 
 $ ->
   equalHeights $('.testimonial')
-  equalHeights $('.our-product')
+  equalHeights $('.our-product p')
