@@ -27,6 +27,7 @@ $title-font-family:               $sans-serif-font-family;
 
 // Colors
 //
+// Color 'scheme'
 $primary-color:                   #3f51b5;
 $light-primary-color:             #c5cae9;
 $accent-color:                    #03a9f4;
@@ -34,6 +35,14 @@ $text-color:                      #fff;
 $primary-text-color:              #333;
 $divider-color:                   #b6b6b6;
 $secondary-text:                  #727272;
+
+
+// Special colors
+$orange:                          #fc582f;
+$green:                           #8cc252;
+$lgreen:                          #cdda48;
+$blue:                            #1daaf1;
+$yellow:                          #fec02e;
 //
 // End colors
 
@@ -71,6 +80,14 @@ $cta-button-hover-bg-color:       darken($cta-button-bg-color, 5%);
 //
 // End buttons
 
+// Box
+//
+$box-border-radius:       2px;
+$box-border-width:        2px;
+$box-image-border-width:  8px;
+//
+// End Box
+
 // Testimonials
 //
 $testimonials-bg-color:           $accent-color;
@@ -96,3 +113,10 @@ $our-products-bg-color:           $divider-color;
 $our-products-h2-color:           $text-color;
 $our-products-h2-text-shadow:     0px 1px 2px fade_out(black, .5);
 // End Our products
+
+// Our product
+//
+$our-product-text-color:          $text-color;
+$our-product-colors:              ($orange $green $lgreen $blue $yellow);
+//
+// End Our product

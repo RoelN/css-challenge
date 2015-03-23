@@ -1,14 +1,6 @@
 .testimonial {
     background-color: $testimonial-bg-color;
-    padding: {
-        left: 1em;
-        right: 1em;
-    }
-    @include box-sizing(border-box);
-    border: $testimonial-border-width solid $testimonial-border-color;
-    @include horizontal-borders($testimonial-border-width, 2);
-    @include border-radius($testimonial-border-radius);
-    @include margin-leader(3);
+    border-color: $testimonial-border-color;
     h3 {
         font-weight: normal;
         letter-spacing: 2px;

@@ -1,0 +1,24 @@
+.our-product {
+    h3 {
+        color: $our-product-text-color;
+        font-weight: normal;
+        letter-spacing: 2px;
+        @include adjust-font-size-to($base-font-size);
+        @include rhythm(1,0,0,0, $base-font-size);
+        font-family: $body-font-family;
+        text-transform: uppercase;
+    }
+    img {
+        height: rhythm($lines: 5);
+    }
+    p {
+        color: $our-product-text-color;
+    }
+}
+
+@for $i from 1 through length($our-product-colors) {
+    .product-#{$i} {
+        background-color: nth($our-product-colors, $i);
+        border-color: nth($our-product-colors, $i);
+    }
+}

@@ -1,0 +1,11 @@
+.box {
+    padding: {
+        left: 1em;
+        right: 1em;
+    }
+    border: $box-border-width solid;
+    @include leading-border($box-border-width, 2);
+    @include trailing-border($box-border-width, 1);
+    @include border-radius($box-border-radius);
+    @include margin-leader(3);
+}
