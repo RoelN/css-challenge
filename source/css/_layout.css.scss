@@ -25,22 +25,22 @@ $susy: (
    )
 );
 
-.page-width {
+.l-page-width {
   @include container;
 }
 
 @for $i from 2 to 5 {
-  .columns-#{$i} {
+  .l-columns-#{$i} {
     clear: both;
 
-    .column {
+    .l-column {
       @include span(1 of $i);
     }
   }
 }
 
-.column {
+.l-column {
   &:last-child {
     @include last;
   }
- }
+}
