@@ -1,0 +1,11 @@
+%section.our-products
+    .l-page-width
+        %h2 Our products are awesome!
+        .l-columns-2
+            - 1.upto 2 do |n|
+                .l-column
+                    = partial 'our-products/our-product', locals: { n: n }
+        .l-columns-3
+            - 3.upto 5 do |n|
+                .l-column
+                    = partial 'our-products/our-product', locals: { n: n }
