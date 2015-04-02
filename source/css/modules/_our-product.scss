@@ -1,4 +1,6 @@
 .our-product {
+    text-align: center;
+
     color: $our-product-text-color;
     h3 {
         color: $our-product-text-color;
@@ -11,6 +13,25 @@
     }
     img {
         height: rhythm($lines: 5);
+    }
+
+    @media #{$medium-screen} {
+      @include clearfix;
+      text-align: left;
+
+      img {
+          float: left;
+          margin-right: 1em;
+      }
+      p {
+        overflow: hidden;
+      }
+      h3 {
+        @include margin-leader(0, $base-font-size);
+      }
+      .button {
+        float: right;
+      }
     }
 }
 
