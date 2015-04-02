@@ -2,11 +2,11 @@ $susy: (
 //   flow: ltr, // rtl | ltr
 //   math: fluid, // fluid | static
 //   output: float, // float | isolate
-//   gutter-position: split, // before | after | split | inside | inside-static
+   gutter-position: inside, // before | after | split | inside | inside-static
    container: 940px, // <length> | auto
 //   container-position: center, // left | center | right | <length> [*2]
    columns: 12, // <number> | <list>
-   gutters: 1/10, // <ratio>
+   gutters: 1/4, // <ratio>
 //   column-width: false, // <length> | false/null
 //   global-box-sizing: content-box, // border-box | content-box
 //   last-flow: to, // from | to
@@ -34,13 +34,22 @@ $susy: (
     clear: both;
 
     .l-column {
-      @include span(1 of $i);
+      @include span(12/$i of 12);
     }
   }
 }
 
 .l-column {
   &:last-child {
-    @include last;
+    @include last; }
+}
+
+@media #{$medium-screen} {
+  .our-products .l-columns-2,
+  .our-products .l-columns-3,
+  .testimonials.l-columns-3 {
+    .l-column {
+        @include span(1 of 1);
+    }
   }
 }
