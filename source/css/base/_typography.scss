@@ -37,3 +37,10 @@ img, object {
 * {
     @include selection($selection-bg-color, contrast-color($selection-bg-color));
 }
+
+@media #{$small-screen} {
+  // This only works because font-size / line-height remains
+  // constant (but then, why wouldn't it?):
+  $base-line-height: $small-screen-line-height;
+  @include establish-baseline($small-screen-font-size);
+}

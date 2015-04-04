@@ -2,6 +2,7 @@
 //
 $base-font-size:                  20px;
 $base-line-height:                28px;
+
 // $rhythm-unit:                     px;
 //
 // End Vertical Rhythm
@@ -126,5 +127,7 @@ $our-product-colors:              ($orange $green $lgreen $blue $yellow);
 //
 $medium-screen:                   'only screen and (max-width: 750px)';
 $small-screen:                    'only screen and (max-width: 650px)';
+$small-screen-font-size:          17px;
+$small-screen-line-height:        24px;
 //
 // End Breakpoints
