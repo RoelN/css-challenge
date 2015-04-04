@@ -53,3 +53,9 @@ $susy: (
     }
   }
 }
+
+@media #{$small-screen} {
+  .features .l-column {
+    @include span(1 of 1);
+  }
+}

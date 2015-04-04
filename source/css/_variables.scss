@@ -124,6 +124,7 @@ $our-product-colors:              ($orange $green $lgreen $blue $yellow);
 
 // Breakpoints
 //
-$medium-screen:   'only screen and (max-width: 705px)';
+$medium-screen:                   'only screen and (max-width: 750px)';
+$small-screen:                    'only screen and (max-width: 650px)';
 //
 // End Breakpoints
