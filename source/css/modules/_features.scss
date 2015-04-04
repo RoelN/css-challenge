@@ -1,7 +1,7 @@
 .features {
   text-align: center;
-  @include rhythm(0,2,3,0);
-  article {
-      @include margin-leader(2);
+  @include rhythm(0,3,3,0);
+  h2 {
+      @include margin-trailer(2, $h2-font-size);
   }
 }

@@ -7,5 +7,5 @@
     @include leading-border($box-border-width, 2);
     @include trailing-border($box-border-width, 1);
     @include border-radius($box-border-radius);
-    @include margin-leader(3);
+    @include margin-trailer(1);
 }

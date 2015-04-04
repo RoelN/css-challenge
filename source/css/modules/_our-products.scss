@@ -1,10 +1,11 @@
 .our-products {
     text-align: center;
-    @include rhythm(0,2,3,0);
+    @include rhythm(0,3,3,0);
     background-color: $our-products-bg-color;
 
     h2 {
         color: $our-products-h2-color;
+        @include margin-trailer(2, $h2-font-size);
         @include text-shadow($our-products-h2-text-shadow);
     }
 }
