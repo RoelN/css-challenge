@@ -15,7 +15,7 @@ h1 {
 }
 h2 {
     @include adjust-font-size-to($h2-font-size);
-    @include rhythm(1,0,0,0, $h2-font-size);
+    @include rhythm(0,0,0,1, $h2-font-size);
 }
 h3 {
     @include adjust-font-size-to($h3-font-size);
