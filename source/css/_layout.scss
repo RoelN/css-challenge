@@ -39,19 +39,19 @@ $susy: (
 }
 
 .our-products {
-  .l-column:nth-of-type(-n + 2) {
+  .l-box:nth-of-type(-n + 2) {
     @include span(6 of 12);
   }
-  .l-column:nth-of-type(3) {
+  .l-box:nth-of-type(3) {
     @include break;
   }
-  .l-column:nth-of-type(n + 3) {
+  .l-box:nth-of-type(n + 3) {
     @include span(4 of 12);
   }
 }
 
 .testimonials {
-  .l-column {
+  .l-box {
     @include span(4 of 12);
   }
 }
@@ -65,7 +65,7 @@ $susy: (
 @media #{$medium-screen} {
   .our-products,
   .testimonials {
-    .l-column:nth-of-type(n) {
+    .l-box:nth-of-type(n) {
         @include full;
     }
   }
