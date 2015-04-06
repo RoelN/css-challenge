@@ -29,33 +29,46 @@ $susy: (
   @include container;
 }
 
-@for $i from 2 to 5 {
-  .l-columns-#{$i} {
-    clear: both;
-
-    .l-column {
-      @include span(12/$i of 12);
+.features {
+  article {
+    @include span(6 of 12);
+    &:last-child {
+      @include last;
     }
   }
 }
 
-.l-column {
-  &:last-child {
-    @include last; }
+.our-products {
+  .l-column:nth-of-type(-n + 2) {
+    @include span(6 of 12);
+  }
+  .l-column:nth-of-type(3) {
+    @include break;
+  }
+  .l-column:nth-of-type(n + 3) {
+    @include span(4 of 12);
+  }
+}
+
+.testimonials {
+  .l-column {
+    @include span(4 of 12);
+  }
 }
 
 @media #{$medium-screen} {
-  .our-products .l-columns-2,
-  .our-products .l-columns-3,
-  .testimonials.l-columns-3 {
-    .l-column {
+  .our-products,
+  .testimonials {
+    .l-column:nth-of-type(n) {
         @include span(1 of 1);
     }
   }
 }
 
 @media #{$small-screen} {
-  .features .l-column {
-    @include span(1 of 1);
+  .features {
+    article {
+      @include span(1 of 1);
+    }
   }
 }
