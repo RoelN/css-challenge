@@ -15,7 +15,7 @@
         height: rhythm($lines: 5);
     }
 
-    @media #{$medium-screen} {
+    @media #{map-get($m-medium, query)} {
       @include clearfix;
       text-align: left;
 

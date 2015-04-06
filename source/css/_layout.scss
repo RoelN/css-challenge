@@ -1,37 +1,10 @@
-$susy: (
-//   flow: ltr, // rtl | ltr
-//   math: fluid, // fluid | static
-//   output: float, // float | isolate
-   gutter-position: inside, // before | after | split | inside | inside-static
-   container: 940px, // <length> | auto
-//   container-position: center, // left | center | right | <length> [*2]
-   columns: 12, // <number> | <list>
-   gutters: 1/4, // <ratio>
-//   column-width: false, // <length> | false/null
-//   global-box-sizing: content-box, // border-box | content-box
-//   last-flow: to, // from | to
-   xdebug: (
-     image: show, // show | hide | show-columns | show-baseline
-//     color: rgba(#66f, .25), // <color>
-     output: overlay, // background | overlay
-     toggle: top right, // right | left and top | bottom
-   ),
-   use-custom: (
-     background-image: true,
-//     background-options: false,
-//     box-sizing: true,
-//     clearfix: false,
-//     rem: true,
-   )
-);
-
 .l-page-width {
   @include container;
 }
 
 .features {
   article {
-    @include span(6 of 12);
+    @include span(6 of map-get($susy, columns));
     &:last-child {
       @include last;
     }
@@ -40,29 +13,29 @@ $susy: (
 
 .our-products {
   .l-box:nth-of-type(-n + 2) {
-    @include span(6 of 12);
+    @include span(6 of map-get($susy, columns));
   }
   .l-box:nth-of-type(3) {
     @include break;
   }
   .l-box:nth-of-type(n + 3) {
-    @include span(4 of 12);
+    @include span(4 of map-get($susy, columns));
   }
 }
 
 .testimonials {
   .l-box {
-    @include span(4 of 12);
+    @include span(4 of map-get($susy, columns));
   }
 }
 
-@media #{$regular-screen} {
+@media #{map-get($m-regular, query)} {
   .l-page-width {
-    @include container(90%);
+    @include container($l-regular);
   }
 }
 
-@media #{$medium-screen} {
+@media #{map-get($m-medium, query)} {
   .our-products,
   .testimonials {
     .l-box:nth-of-type(n) {
@@ -71,7 +44,7 @@ $susy: (
   }
 }
 
-@media #{$small-screen} {
+@media #{map-get($m-small, query)} {
   .features {
     article {
       @include full;

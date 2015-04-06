@@ -24,7 +24,7 @@
         color: $testimonial-text-color;
     }
 
-    @media #{$medium-screen} {
+    @media #{map-get($m-medium, query)} {
       text-align: left;
 
       img {

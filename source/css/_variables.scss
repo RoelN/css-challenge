@@ -7,6 +7,44 @@ $base-line-height:                28px;
 //
 // End Vertical Rhythm
 
+// Layouts
+// see also http://susydocs.oddbird.net/en/latest/settings/#layout
+//
+// Default layout:
+$susy: (
+   gutter-position: inside,
+   container: 940px,
+   columns: 12,
+   gutters: 1/4
+);
+
+// Other layout maps are prefixed with l-
+$l-regular: (
+   container: 90%
+);
+
+//
+// End Layouts
+
+// Breakpoints
+// and related properties.
+//
+// Are prefixed with m-
+//
+$m-regular: (
+  query:                          'only screen and (max-width: 1280px)'
+);
+$m-medium: (
+  query:                          'only screen and (max-width: 850px)'
+);
+$m-small: (
+  query:                          'only screen and (max-width: 650px)',
+  font-size:                      17px,
+  line-height:                    24px
+);
+//
+// End Breakpoints
+
 // Typography
 //
 @import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic');
@@ -121,15 +159,3 @@ $our-product-text-color:          $text-color;
 $our-product-colors:              ($orange $green $lgreen $blue $yellow);
 //
 // End Our product
-
-
-// Breakpoints
-//
-$regular-screen:                  'only screen and (max-width: 1280px)';
-$medium-screen:                   'only screen and (max-width: 850px)';
-$small-screen:                    'only screen and (max-width: 650px)';
-
-$small-screen-font-size:          17px;
-$small-screen-line-height:        24px;
-//
-// End Breakpoints
