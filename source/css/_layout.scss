@@ -56,11 +56,17 @@ $susy: (
   }
 }
 
+@media #{$regular-screen} {
+  .l-page-width {
+    @include container(90%);
+  }
+}
+
 @media #{$medium-screen} {
   .our-products,
   .testimonials {
     .l-column:nth-of-type(n) {
-        @include span(1 of 1);
+        @include full;
     }
   }
 }
@@ -68,7 +74,7 @@ $susy: (
 @media #{$small-screen} {
   .features {
     article {
-      @include span(1 of 1);
+      @include full;
     }
   }
 }
