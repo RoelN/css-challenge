@@ -47,7 +47,7 @@ $m-small: (
 
 // Typography
 //
-$font-url:                        'http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic';
+$font-url:                        'http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' !default;
 
 
 $xlarge-font-size:                ($base-font-size * 2.7) !default;
@@ -87,7 +87,7 @@ $yellow:                          #fec02e !default;
 $selection-bg-color:              $primary-color !default;
 // Welcome
 //
-$welcome-bg-color:                $primary-color !default;
+$welcome-bg:                      $primary-color !default;
 $welcome-title-color:             $text-color !default;
 $welcome-title-text-shadow:       none !default;
 $welcome-subtitle-color:          $light-primary-color !default;
@@ -112,21 +112,36 @@ $standard-button: (
 // )
 $button-color:                    $text-color !default;
 $button-bg-color:                 $divider-color !default;
+$button-border-color:             $button-bg-color !default;
+$button-hover-color:              $text-color !default;
 $button-hover-bg-color:           darken($button-bg-color, 5%) !default;
+$button-hover-border-color:       $button-hover-bg-color !default;
 
 $cta-button-color:                $text-color !default;
 $cta-button-bg-color:             $accent-color !default;
+$cta-button-border-color:         $cta-button-bg-color !default;
+$cta-button-hover-color:          $text-color !default;
 $cta-button-hover-bg-color:       darken($cta-button-bg-color, 5%) !default;
+$cta-button-hover-border-color:   $cta-button-hover-bg-color !default;
 //
 // End buttons
 
 // Box
 //
-$box-border-radius:       2px !default;
-$box-border-width:        2px !default;
-$box-image-border-width:  8px !default;
+$box-border-radius:               2px !default;
+$box-border-width:                2px !default;
+$box-image-border-width:          8px !default;
+$box-bg
 //
-// End Box
+ End Box
+
+// Features
+//
+$features-bg-color:               transparent !default;
+$features-h2-color:               $text-color !default;
+$features-h2-text-shadow:         none !default;
+//
+// End Features
 
 // Testimonials
 //

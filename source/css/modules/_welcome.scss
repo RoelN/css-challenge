@@ -1,6 +1,7 @@
 .welcome {
   @include rhythm(0,5,3,0);
-  background-color: $welcome-bg-color;
+  background: $welcome-bg;
+  background-size: cover;
   text-align: center;
   h1 {
     color: $welcome-title-color;

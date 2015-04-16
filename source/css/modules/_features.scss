@@ -1,7 +1,10 @@
 .features {
   text-align: center;
   @include rhythm(0,3,3,0);
+  background-color: $features-bg-color;
   h2 {
-      @include margin-trailer(2, $h2-font-size);
+    color: $features-h2-color;
+    @include text-shadow($features-h2-text-shadow);
+    @include margin-trailer(2, $h2-font-size);
   }
 }

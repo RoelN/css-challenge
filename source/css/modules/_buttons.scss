@@ -1,15 +1,16 @@
 .button {
-    @include transition-property(background-color, border-color);
+    @include transition-property(color, background-color, border-color);
     @include transition-duration(0.2s);
 
     @include button($standard-button);
     font-family: $title-font-family;
     color: $button-color;
     background-color: $button-bg-color;
-    border-color: $button-bg-color;
+    border-color: $button-border-color;
     &:hover {
+        color: $button-hover-color;
         background-color: $button-hover-bg-color;
-        border-color: $button-hover-bg-color;
+        border-color: $button-hover-border-color;
     }
 }
 
@@ -17,9 +18,10 @@
 .call-to-action {
     color: $cta-button-color;
     background-color: $cta-button-bg-color;
-    border-color: $cta-button-bg-color;
+    border-color: $cta-button-border-color;
     &:hover {
+        color: $cta-button-hover-color;
         background-color: $cta-button-hover-bg-color;
-        border-color: $cta-button-hover-bg-color;
+        border-color: $cta-button-hover-border-color;
     }
 }
