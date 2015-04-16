@@ -4,9 +4,11 @@
   text-align: center;
   h1 {
     color: $welcome-title-color;
+    @include text-shadow($welcome-title-text-shadow);
   }
   p {
     color: $welcome-subtitle-color;
     @include rhythm(0,0,0,2);
+    @include text-shadow($welcome-subtitle-text-shadow);
   }
 }

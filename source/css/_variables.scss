@@ -1,9 +1,9 @@
 // Vertical Rhythm
 //
-$base-font-size:                  20px;
-$base-line-height:                28px;
+$base-font-size:                  20px !default;
+$base-line-height:                28px !default;
 
-// $rhythm-unit:                     px;
+// $rhythm-unit:                     px !default;
 //
 // End Vertical Rhythm
 
@@ -16,12 +16,12 @@ $susy: (
    container: 940px,
    columns: 12,
    gutters: 1/4
-);
+) !default;
 
 // Other layout maps are prefixed with l-
 $l-regular: (
    container: 90%
-);
+) !default;
 
 //
 // End Layouts
@@ -33,64 +33,65 @@ $l-regular: (
 //
 $m-regular: (
   query:                          'only screen and (max-width: 1280px)'
-);
+) !default;
 $m-medium: (
   query:                          'only screen and (max-width: 850px)'
-);
+) !default;
 $m-small: (
   query:                          'only screen and (max-width: 650px)',
   font-size:                      17px,
   line-height:                    24px
-);
+) !default;
 //
 // End Breakpoints
 
 // Typography
 //
-@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic');
-$sans-serif-font-family:          'Droid Sans', Verdana, Arial, sans-serif;
-$serif-font-family:               'Droid Serif', Times, 'Times New Roman', serif;
+$font-url:                        'http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic';
 
-$xlarge-font-size:                ($base-font-size * 2.7);
-$large-font-size:                 ($base-font-size * 2);
-$medium-font-size:                ($base-font-size * 1.1);
 
-$h1-font-size:                    $xlarge-font-size;
-$h2-font-size:                    $large-font-size;
-$h3-font-size:                    $medium-font-size;
+$xlarge-font-size:                ($base-font-size * 2.7) !default;
+$large-font-size:                 ($base-font-size * 2) !default;
+$medium-font-size:                ($base-font-size * 1.1) !default;
 
-$body-font-family:                $serif-font-family;
-$title-font-family:               $sans-serif-font-family;
+$h1-font-size:                    $xlarge-font-size !default;
+$h2-font-size:                    $large-font-size !default;
+$h3-font-size:                    $medium-font-size !default;
+
+$body-font-family:                'Droid Serif', Times, 'Times New Roman', serif !default;
+$title-font-family:               'Droid Sans', Verdana, Arial, sans-serif !default;
 //
 // End Typography
 
 // Colors
 //
 // Color 'scheme'
-$primary-color:                   #3f51b5;
-$light-primary-color:             #c5cae9;
-$accent-color:                    #03a9f4;
-$text-color:                      #fff;
-$primary-text-color:              #333;
-$divider-color:                   #b6b6b6;
-$secondary-text:                  #727272;
+$primary-color:                   #3f51b5 !default;
+$light-primary-color:             #c5cae9 !default;
+$accent-color:                    #03a9f4 !default;
+$text-color:                      #fff !default;
+$primary-text-color:              #333 !default;
+$divider-color:                   #b6b6b6 !default;
+$secondary-text:                  #727272 !default;
 
 
 // Special colors
-$orange:                          #fc582f;
-$green:                           #8cc252;
-$lgreen:                          #cdda48;
-$blue:                            #1daaf1;
-$yellow:                          #fec02e;
+$orange:                          #fc582f !default;
+$green:                           #8cc252 !default;
+$lgreen:                          #cdda48 !default;
+$blue:                            #1daaf1 !default;
+$yellow:                          #fec02e !default;
 //
 // End colors
 
-$selection-bg-color:              $primary-color;
+$selection-bg-color:              $primary-color !default;
 // Welcome
 //
-$welcome-bg-color:                $primary-color;
-$welcome-title-color:             $text-color;
-$welcome-subtitle-color:          $light-primary-color;
+$welcome-bg-color:                $primary-color !default;
+$welcome-title-color:             $text-color !default;
+$welcome-title-text-shadow:       none !default;
+$welcome-subtitle-color:          $light-primary-color !default;
+$welcome-subtitle-text-shadow:    none !default;
 //
 // End Welcome
 
@@ -102,60 +103,60 @@ $standard-button: (
     horizontal-padding:           $medium-font-size,
     min-width:                    78px,
     border-radius:                2px
-);
+) !default;
 // $large-button: (
 //
-// );
+// ) !default;
 // $small-button: (
 //
 // )
-$button-color:                    $text-color;
-$button-bg-color:                 $divider-color;
-$button-hover-bg-color:           darken($button-bg-color, 5%);
+$button-color:                    $text-color !default;
+$button-bg-color:                 $divider-color !default;
+$button-hover-bg-color:           darken($button-bg-color, 5%) !default;
 
-$cta-button-color:                $text-color;
-$cta-button-bg-color:             $accent-color;
-$cta-button-hover-bg-color:       darken($cta-button-bg-color, 5%);
+$cta-button-color:                $text-color !default;
+$cta-button-bg-color:             $accent-color !default;
+$cta-button-hover-bg-color:       darken($cta-button-bg-color, 5%) !default;
 //
 // End buttons
 
 // Box
 //
-$box-border-radius:       2px;
-$box-border-width:        2px;
-$box-image-border-width:  8px;
+$box-border-radius:       2px !default;
+$box-border-width:        2px !default;
+$box-image-border-width:  8px !default;
 //
 // End Box
 
 // Testimonials
 //
-$testimonials-bg-color:           $accent-color;
-$testimonials-h2-color:           $text-color;
-$testimonials-h2-text-shadow:     0px 1px 2px fade_out(black, .5);
+$testimonials-bg-color:           $accent-color !default;
+$testimonials-h2-color:           $text-color !default;
+$testimonials-h2-text-shadow:     0px 1px 2px fade_out(black, .5) !default;
 //
 // End Testimonials
 
 // Testimonial
 //
-$testimonial-bg-color:            $text-color;
-$testimonial-text-color:          $secondary-text;
-$testimonial-border-color:        $text-color;
-$testimonial-border-radius:       2px;
-$testimonial-border-width:        2px;
-$testimonial-image-border-color:  $accent-color;
-$testimonial-image-border-width:  8px;
+$testimonial-bg-color:            $text-color !default;
+$testimonial-text-color:          $secondary-text !default;
+$testimonial-border-color:        $text-color !default;
+$testimonial-border-radius:       2px !default;
+$testimonial-border-width:        2px !default;
+$testimonial-image-border-color:  $accent-color !default;
+$testimonial-image-border-width:  8px !default;
 //
 // End Testimonial
 
 // Our products
-$our-products-bg-color:           $divider-color;
-$our-products-h2-color:           $text-color;
-$our-products-h2-text-shadow:     0px 1px 2px fade_out(black, .5);
+$our-products-bg-color:           $divider-color !default;
+$our-products-h2-color:           $text-color !default;
+$our-products-h2-text-shadow:     0px 1px 2px fade_out(black, .5) !default;
 // End Our products
 
 // Our product
 //
-$our-product-text-color:          $text-color;
-$our-product-colors:              ($orange $green $lgreen $blue $yellow);
+$our-product-text-color:          $text-color !default;
+$our-product-colors:              ($orange $green $lgreen $blue $yellow) !default;
 //
 // End Our product

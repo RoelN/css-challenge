@@ -1,3 +1,5 @@
+@import 'theme';
+
 @import 'variables';
 @import 'compass';
 @import 'compass/css3/selection'; // Is not included in `compass`
@@ -5,6 +7,7 @@
 @import 'susy';
 
 // SMACSS stuff:
+
 @import 'mixins';
 @import 'base';
 @import 'layout';

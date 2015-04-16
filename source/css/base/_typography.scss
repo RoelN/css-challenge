@@ -1,4 +1,5 @@
 @include establish-baseline;
+@import url($font-url);
 
 body {
     font-family: $body-font-family;
