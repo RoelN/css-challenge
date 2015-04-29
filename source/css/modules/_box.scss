@@ -8,4 +8,5 @@
     @include trailing-border($box-border-width, 1);
     @include border-radius($box-border-radius);
     @include margin-trailer(1);
+    background: $box-bg;
 }

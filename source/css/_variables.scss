@@ -131,6 +131,7 @@ $cta-button-hover-border-color:   $cta-button-hover-bg-color !default;
 $box-border-radius:               2px !default;
 $box-border-width:                2px !default;
 $box-image-border-width:          8px !default;
+$box-bg:                          none !default;
 //
 // End Box
 
@@ -163,14 +164,17 @@ $testimonial-image-border-width:  8px !default;
 // End Testimonial
 
 // Our products
+//
 $our-products-bg-color:           $divider-color !default;
 $our-products-h2-color:           $text-color !default;
 $our-products-h2-text-shadow:     0px 1px 2px fade_out(black, .5) !default;
+//
 // End Our products
 
 // Our product
 //
 $our-product-text-color:          $text-color !default;
 $our-product-colors:              ($orange $green $lgreen $blue $yellow) !default;
+$our-product-img-filter:          none !default;
 //
 // End Our product

@@ -13,6 +13,7 @@
     }
     img {
         height: rhythm($lines: 5);
+        @include filter($our-product-img-filter);
     }
 
     @media #{map-get($m-medium, query)} {

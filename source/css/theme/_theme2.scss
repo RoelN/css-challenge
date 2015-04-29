@@ -11,25 +11,58 @@ $primary-text-color:              #72441e;
 $divider-color:                   #b6aea1;
 $secondary-text:                  #727272;
 
+// Buttons
+//
 $button-color:                    $primary-text-color;
 $button-bg-color:                 fade-out($text-color, .1);
 $button-border-color:             $primary-text-color;
 $button-hover-bg-color:           $primary-text-color;
 
 $cta-button-color:                $accent-color;
-$cta-button-bg-color:             fade-out($text-color, .5);
+$cta-button-bg-color:             fade-out($text-color, .4);
 $cta-button-border-color:         $accent-color;
 $cta-button-hover-bg-color:       $accent-color;
+//
+// End Buttons
 
+// Box
+//
+$box-bg:                          linear-gradient(rgba(white, 0), white 65%, rgba(white, 0.8) 95%, rgba(white, 0));
+//
+// End Box
+
+// Welcome
+//
 $welcome-bg:                      url('../img/bg.jpg') 0% 55%;
 $welcome-title-color:             white;
 $welcome-title-text-shadow:       0px 1px 2px darken($primary-color, 10%);
 $welcome-subtitle-color:          white;
 $welcome-subtitle-text-shadow:    0px 1px 2px darken($primary-color, 10%);
+//
+// End Welcome
 
+// Features
+//
 $features-bg-color:               $light-primary-color;
 $features-h2-text-shadow:         0px 1px 2px darken($primary-color, 10%);
+//
+// End Features
 
+// Testimonials
+//
 $testimonials-bg-color:           $primary-text-color;
+//
+// End Testimonials
 
+// Testimonial
+//
+$testimonial-bg-color:            $light-primary-color;
+//
+// End Testimonial
+
+// Our product
+//
 $our-product-text-color:          $primary-text-color;
+$our-product-img-filter:          invert(60%) sepia(60%);
+//
+// End Our product
